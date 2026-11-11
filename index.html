@@ -350,6 +350,7 @@ h3{font-size:17px;margin:0 0 4px}
 .item .box{padding:12px 14px;margin:0}
 .item .box h4{margin:0;font-size:16.5px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .item .box p{margin:4px 0 0;font-size:14.5px}
+.item .box p.spot-desc{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;overflow-wrap:anywhere;line-height:1.5}
 .item .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
 .item .map{font-size:13.5px;font-weight:700;color:var(--c3-ink);text-decoration:none;display:inline-block;margin-top:6px}
 .item.hide{display:none}
@@ -622,7 +623,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "sight",
           "title": "HOUSE OF BENEDICT",
-          "desc": "班尼迪克之屋拍照景點，依導遊當日安排",
+          "desc": "復古歐式風格的熱門拍照景點，多種華麗場景，隨手拍都好看。",
           "tags": [],
           "map": "House of Benedict Pattaya"
         },
@@ -631,7 +632,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "sight",
           "title": "晚間步行街活動",
-          "desc": "是否安排美軍步行街，依旅行社最終行程確認",
+          "desc": "芭達雅最熱鬧的夜生活街區，聚集酒吧、餐廳與街頭表演。",
           "tags": [],
           "map": "Walking Street Pattaya"
         },
@@ -684,7 +685,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "sight",
           "title": "沙美島海灘活動",
-          "desc": "海邊自由活動；水上活動與是否能下水依天氣及當日安排",
+          "desc": "以潔白沙灘、清澈海水聞名，適合踏浪拍照、享受海島時光。",
           "tags": [],
           "map": "Koh Samet Thailand"
         },
@@ -693,7 +694,7 @@ const TRIP = {
           "time": "依導遊安排",
           "cat": "food",
           "title": "晚餐｜火舞餐廳",
-          "desc": "沙美島火舞表演晚餐",
+          "desc": "沙美島夜晚特色表演，在海邊欣賞精彩刺激的火焰舞蹈。",
           "tags": []
         }
       ],
@@ -720,7 +721,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "sight",
           "title": "真理聖殿",
-          "desc": "參觀時間及門票安排待旅行社確認",
+          "desc": "芭達雅著名的全木造建築，以精緻手工木雕與壯觀外觀聞名。",
           "tags": [],
           "map": "Sanctuary of Truth Pattaya"
         },
@@ -729,8 +730,17 @@ const TRIP = {
           "time": "依導遊安排",
           "cat": "food",
           "title": "午餐｜網紅咖啡廳",
-          "desc": "旅行社安排，店名待確認",
+          "desc": "芭達雅人氣特色咖啡廳，享用午餐、喝咖啡與拍照休息。",
           "tags": []
+        },
+        {
+          "k": "d3street",
+          "time": "待確認",
+          "cat": "sight",
+          "title": "PATTAYA 大街巡禮",
+          "desc": "漫步芭達雅熱鬧街區，探索特色商店、餐廳與當地小吃。",
+          "tags": [],
+          "map": "Pattaya Beach Road Thailand"
         },
         {
           "k": "d3b",
@@ -781,7 +791,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "shop",
           "title": "CHAGÔ 打卡",
-          "desc": "行前資料安排的特色飲品店",
+          "desc": "泰國女星 Orm 創立的茶飲品牌，LingOrm 粉絲必訪打卡點。",
           "tags": [],
           "map": "CHAGO Bangkok Thailand"
         },
@@ -790,7 +800,7 @@ const TRIP = {
           "time": "依導遊安排",
           "cat": "food",
           "title": "午餐｜鄺記",
-          "desc": "旅行社行前資料指定",
+          "desc": "鄺玲玲與弟弟經營的港式燒臘店，主打叉燒、燒鴨與脆皮燒肉。",
           "tags": [],
           "map": "https://maps.app.goo.gl/qdmpA4Waw7t4UTK26"
         },
@@ -799,7 +809,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "shop",
           "title": "ORI Siam Center",
-          "desc": "曼谷自由行新增打卡／逛街點；依當天交通與團員安排調整順序。",
+          "desc": "泰國運動休閒服飾品牌，風格類似 lululemon，價格更親民。",
           "tags": [],
           "map": "https://maps.app.goo.gl/T6ff8Q6MwsWSJK559"
         },
@@ -808,7 +818,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "shop",
           "title": "CentralWorld",
-          "desc": "購物與自由活動",
+          "desc": "曼谷大型購物中心，集結國際品牌、泰國服飾與各式美食。",
           "tags": [],
           "map": "CentralWorld Bangkok"
         },
@@ -817,7 +827,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "shop",
           "title": "Big C Ratchadamri",
-          "desc": "購買零食、伴手禮",
+          "desc": "泰國人氣大型超市，零食、泡麵、保養品與伴手禮一次買齊。",
           "tags": [],
           "map": "Big C Supercenter Ratchadamri Bangkok"
         },
@@ -853,7 +863,7 @@ const TRIP = {
           "time": "待確認",
           "cat": "stay",
           "title": "退房、前往 Terminal 21",
-          "desc": "午餐使用 T21 餐卡；行李保管及接送方式請依旅行社公告",
+          "desc": "以世界各國為主題的購物中心，擁有特色樓層與平價美食街。",
           "tags": [],
           "map": "Terminal 21 Asok Bangkok"
         },
@@ -1072,6 +1082,7 @@ function openStory(di, k){
 function closeStory(){ document.getElementById("sheet").classList.remove("on"); document.body.style.overflow = ""; }
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeStory(); });
 
+const SPOT_DESC_KEYS = new Set(["d1house", "d1d", "d2b", "d2meal2", "d3a", "d3meal1", "d4a", "d4meal1", "d4ori", "d4b", "d4c", "d5a", "d3street"]);
 function renderDays(first){
   const today = nowLocal(), el = document.getElementById("days");
   if (first) {
@@ -1086,7 +1097,7 @@ function renderDays(first){
       <div class="t">${esc(it.time)}</div>
       <div class="card box">
         <h4>${esc(it.title)}${it.must ? ` <span class="tag must">必去</span>` : ""}</h4>
-        ${it.desc ? `<p>${esc(it.desc)}</p>` : ""}
+        ${it.desc ? `<p class="${SPOT_DESC_KEYS.has(it.k) ? 'spot-desc' : ''}">${esc(it.desc)}</p>` : ""}
         ${it.tags?.length ? `<div class="tags">${it.tags.map(t => `<span class="tag ${esc(t)}">${esc(TAG[t] || t)}</span>`).join("")}</div>` : ""}
         ${it.map || it.story ? `<div class="acts">${it.story ? `<button class="story-btn" data-story="${curDay}|${esc(it.k)}">📖 景點故事</button>` : ""}${it.map ? `<a class="map" href="${mapUrl(it.map)}" target="_blank" rel="noopener">📍 Google Maps</a>` : ""}</div>` : ""}
       </div>
